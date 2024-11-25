@@ -26,7 +26,7 @@ Please note that all accounts created will now bear the merchant's business name
 
 After creating the pool of accounts, the system automatically assigns accounts from your pool on a transaction basis.
 
-It has various webhook notifications for mismatch, expired and successful transaction as we as a re-query endpoint to see all transactions that have been queued for refunds, and those that have been refunded.
+It has various webhook notifications for mismatch, expired and successful transaction as well as a re-query endpoint to see all transactions that have been queued for refunds, and those that have been refunded.
 
 **Please note that to create dynamic virtual accounts for your pools, your KYC account needs to be a GTB account number and is mapped to the BVN provided.**
 
@@ -143,7 +143,7 @@ This API allows you re-query a transaction to see its status. It returns an arra
 ### Edit Amount/Duration
 
 This API allows you to edit the amount/duration of a dynamic transaction that has already been initiated.
-It takes the transction reference, the amount and duration.
+It takes the transaction reference, the amount and duration.
 
 #### Sample Request
 
@@ -191,7 +191,7 @@ This API allows you push test transactions. Please note that this APi is to be u
 Webhook Notification is sent for 3 different events/ status
 
 1. Success: first transfer/transaction that is equal to the expected/specified amount and within the set duration.
-2. Mismatch: A transfer that happens within the specified duration but expected amount is not equal to the transfered amount.
+2. Mismatch: A transfer that happens within the specified duration but expected amount is not equal to the transferred amount.
 3. Expired: Transaction that happens after the set duration or after a successful transaction has been recorded, it doesn't matter if the transferred amount is equivalent to the expected amount.
 
 **To set your webhook, kindly visit your squad dashboard and go to the merchant setting page you will see a field labelled webhook URL. Only accounts with a valid webhook URL will receive notification.**
